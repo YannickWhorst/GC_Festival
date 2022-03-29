@@ -7,7 +7,7 @@ function registerUser($firstName, $lastName, $email, $password) {
 
 function getUser($email, $password) {
     $user = db_getData("SELECT * FROM users WHERE email='$email' AND password='$password'");
-    if ($user->rowCount() > 0){
+    if ($user->num_rows > 0){
         return $user;
     } else {
         return "No user found";

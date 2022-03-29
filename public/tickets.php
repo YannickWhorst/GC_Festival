@@ -19,8 +19,7 @@ if(isset($_POST['login']))
 
                 <form action="orderConfirmation.php" method="post">
                     <?php 
-                    // while($userData = $user->fetch_assoc()){
-                    while($userData = $user->fetch(PDO::FETCH_ASSOC)){
+                    while($userData = $user->fetch_assoc()){
                     ?>
                     <label for="userID">Gebruikers ID</label>
                     <input type="number" name="userID" value="<?php echo $userData['id']; ?>">
@@ -32,8 +31,8 @@ if(isset($_POST['login']))
                     <label for="ticketSelect">Tickets</label>
                     <select name="ticketSelect" type="select">
                         <?php 
-                        // while($ticket = $tickets->fetch_assoc()) {
-                        while($ticket = $tickets->fetch(PDO::FETCH_ASSOC)){
+                        while($ticket = $tickets->fetch_assoc()) {
+                        // while($ticket = $tickets->fetch(PDO::FETCH_ASSOC)){
                         ?>
                     <option name="<?php echo $ticket['name']; ?>" value="<?php echo $ticket['id']; ?>"><?php echo $ticket['name']; echo " €"; echo $ticket['price']; ?></option>
                     <?php }?>

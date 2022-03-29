@@ -12,6 +12,7 @@
                 <ul class="footerMenu">
                     <li><a href="/">Home</a></li>
                     <li><a href="/tickets.php">Tickets</a></li>
+                    <li><a href="/orderHistory.php">Bestel Geschiedenis</a></li>
                     <li><a href="/lineup.php">Lineup</a></li>
                     <li><a href="/registreren.php">Registreren</a></li>
                 </ul>

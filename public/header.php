@@ -19,6 +19,7 @@
         <ul class="menu">
             <li><a href="<?php echo PUBLIC_PATH ?>/">Home</a></li>
             <li><a href="<?php echo PUBLIC_PATH ?>/tickets.php">Tickets</a></li>
+            <li><a href="<?php echo PUBLIC_PATH ?>/orderHistory.php">Bestel geschiedenis</a></li>
             <li><a href="<?php echo PUBLIC_PATH ?>/lineup.php">Lineup</a></li>
             <li><a href="<?php echo PUBLIC_PATH ?>/registreren.php">Registreren</a></li>
         </ul>
